@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Laydi Candles</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+          body {
+        background-color: #F8F2EA;
+        color: #543B2E;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    h1 {
+        color: #543B2E;
+    }
+    .login-note {
+        color: #806b58;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .login-card {
+        border-top: 4px solid #b78d62;
+    }
+    </style>
+</head>
+
+<body>
+<header class="site-header">
+
+    <a class="brand" href="index.html">
+        Laydi <span>Candles</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+      
+        <a href="login.html">Login</a>
+        <a class="active" href="signup.html">Sign Up</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<main class="auth-layout signup-layout">
+
+    <section class="auth-visual">
+
+        <img src="Images/heroo.jpg"
+             alt="Laydi Candles">
+
+        <p class="eyebrow">
+            Find your favorite fragrance
+        </p>
+
+        <h1>Create your account</h1>
+
+        <p>
+            Join Laydi Candles and discover
+            scents for every moment.
+        </p>
+
+    </section>
+
+    <section class="auth-card">
+
+        <h2>Sign Up</h2>
+
+        <p class="form-intro">
+            Fill in the details below.
+        </p>
+
+        <form id="signupForm" novalidate>
+
+            <label for="fullName">Name</label>
+            <input type="text"
+                   id="fullName"
+                   name="name"
+                   placeholder="Your full name"
+                   required>
+
+            <label for="signupEmail">Email</label>
+            <input type="email"
+                   id="signupEmail"
+                   name="email"
+                   placeholder="name@example.com"
+                   required>
+
+            <label for="signupPassword">
+                Password
+            </label>
+            <input type="password"
+                   id="signupPassword"
+                   name="password"
+                   placeholder="At least 8 characters"
+                   required>
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+            <input type="password"
+                   id="confirmPassword"
+                   name="confirmPassword"
+                   placeholder="Re-enter your password"
+                   required>
+
+            <p id="signupMessage"
+               class="form-message"></p>
+
+            <button class="primary-button"
+                    type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="login-note">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+        <p class="demo-note">
+            Demo page: information is validated
+            in the browser only and is not saved.
+        </p>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Laydi Candles. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
