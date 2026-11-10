@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home | Laydi Candles</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        background-color: #F8F2EA;
+        color: #543B2E;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    h1 {
+        color: #543B2E;
+    }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <a class="brand" href="index.html">
+        Laydi <span>Candles</span>
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+<section class="hero">
+<img src="Images/heroo.jpg"
+     alt="Laydi Candles"
+     class="hero-image"
+     usemap="#candlemap">
+
+<map name="candlemap">
+    <area shape="rect"
+          coords="0,0,1200,1200"
+          href="about.html"
+          alt="About Laydi Candles">
+</map>
+
+<div class="hero-content">
+    <h1>Light Up Your Moments</h1>
+    <p id="welcome-text"></p>
+
+    <p>
+        Discover our beautiful collection
+        of scented candles.
+    </p>
+
+    <a href="#collection" class="explore-btn">
+        Explore Collection
+    </a>
+</div>
+</section>
+
+    <section id="collection">
+        <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">Our Candle Collection</h2>
+        <p id="candle-count"></p>
+
+        <div class="products">
+        <div class="product-card">
+    <img src="Images/vanilla.jpg" alt="Vanilla Candle">
+    <h3>Vanilla Candle</h3>
+    <p>35 SAR</p>
+    <button type="button"
+        onclick="showDetails('Vanilla')">
+    View Details
+</button>
+</div>
+
+<div class="product-card">
+    <img src="Images/rose.jpg" alt="Rose Candle">
+    <h3>Rose Candle</h3>
+    <p>45 SAR</p>
+    <button type="button" onclick="showDetails('Rose')">
+    View Details
+</button>
+</div>
+
+<div class="product-card">
+    <img src="Images/lavender.jpg" alt="Lavender Candle">
+    <h3>Lavender Candle</h3>
+    <p>45 SAR</p>
+    <button type="button" onclick="showDetails('Lavender')">
+    View Details
+</button>
+</div>
+
+<div class="product-card">
+    <img src="Images/oud.jpg" alt="Oud Candle">
+    <h3>Oud Candle</h3>
+    <p>60 SAR</p>
+    <button type="button" onclick="showDetails('Oud')">
+    View Details
+</button>
+
+</div>
+</div>
+<p id="candle-details"></p>
+<img id="candle-detail-image"
+     alt="Selected Candle"
+     style="display: none; width: 200px; border-radius: 12px;">
+<section class="why-us">
+    <article>
+    <h2>Why Choose Laydi Candles?</h2>
+        <p>
+    At Laydi Candles, we believe every
+    candle creates a special moment.
+</p>
+
+<ul>
+    <li>Beautiful and elegant candle designs</li>
+    <li>A variety of relaxing scents</li>
+    <li>Perfect for gifts and special occasions</li>
+    <li>Affordable prices for every customer</li>
+</ul>
+</article>
+            </section>
+    </section>
+<section>
+    <h2 class="price-title">Candle Size & Price Guide</h2>
+<table class="price-table">
+    
+    <tr>
+        <th>Candle Name</th>
+        <th>Size</th>
+        <th>Price (SAR)</th>
+    </tr>
+
+    <tr>
+        <td>Vanilla Candle</td>
+        <td>Small</td>
+        <td>35</td>
+    </tr>
+
+    <tr>
+        <td>Rose Candle</td>
+        <td>Medium</td>
+        <td>45</td>
+    </tr>
+
+    <tr>
+        <td>Lavender Candle</td>
+        <td>Medium</td>
+        <td>45</td>
+    </tr>
+
+    <tr>
+        <td>Oud Candle</td>
+        <td>Large</td>
+        <td>60</td>
+    </tr>
+</table>
+</section>
+<footer class="site-footer">
+    <p>&copy; 2026 Laydi Candles. All rights reserved.</p>
+</footer>
+<script>
+    function welcomeMessage() {
+        document.getElementById("welcome-text").innerHTML =
+            "Welcome to Laydi Candles - Find your perfect scent!";
+    }
+
+    welcomeMessage();
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
